@@ -673,8 +673,6 @@ color: #2E2F42;
     padding-left: 38px;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    name="user-name";
-    type="text";
 }
 
 .modal-input:focus {
@@ -745,9 +743,10 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: transparent;
 }
 
-input:checked + span {
+.modal-input-checkbox:checked + .span-privacy {
     background-color: #404bbf;
     fill: #F4F4FD;
+    border: none;
 }
 
 .privacy-link {
