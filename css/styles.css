@@ -720,8 +720,16 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal-checkbox {
     margin-bottom: 24px;
 }
-.modal-input-checkbox {
-    
+
+:root {
+    --background-color-checked: #404bbf;
+    --fill-color-checked: #F4F4FD;
+}
+
+.modal-input-checkbox:checked+.modal-privacy .span-privacy {
+    background-color: var(--background-color-checked);
+    border: none;
+    fill: var(--fill-color-checked);
 }
 
 .modal-privacy {
